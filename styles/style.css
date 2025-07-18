@@ -84,7 +84,26 @@
     padding: 10px;
 }
 
-
+/* brand logos */
+.brand-logos{
+    max-width: 1280px;
+    margin: 0 auto;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    border-top: 1px solid rgba(192, 204, 218, 0.6);
+    border-bottom: 1px solid rgba(192, 204, 218, 0.6);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: grid;
+    /* grid-template-columns: 55px 84px 84px 99px 97px 111px 91px; */
+    grid-template-columns: repeat(7, 1fr);
+      
+}
+.brand-logos img {
+  max-width: 100%;
+  height: auto;
+}
 
 
 
@@ -104,5 +123,11 @@
     .hero{
         flex-direction: column-reverse;
         text-align: center;
+    }
+    .brand-logos{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) ;
+        gap: 20px;
+        justify-items: center;
     }
 }
