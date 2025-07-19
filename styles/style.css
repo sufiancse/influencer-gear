@@ -135,17 +135,17 @@
 }
 
 .popular-collection-card {
-    max-width: 329px;
-    max-height: 476px;
+    width: 329px;
+    height: 476px;
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
     padding: 17px 15px;
     border-radius: 5px;
     text-align: left;
 }
 
-/* .card-image {
+.card-image {
     width: 100%;
-} */
+}
 
 .card-name {
     color: rgba(24, 25, 31, 1);
