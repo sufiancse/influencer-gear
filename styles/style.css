@@ -11,7 +11,8 @@
 .display-flex {
     display: flex;
 }
-.btn-primary{
+
+.btn-primary {
     background-color: #E02C6D;
     color: white;
     padding: 10px 24px;
@@ -52,7 +53,7 @@
 
 
 /* hero section */
-.hero{
+.hero {
     max-width: 1280px;
     margin: 0 auto;
     justify-content: space-between;
@@ -60,21 +61,24 @@
     align-items: center;
     margin-bottom: 50px;
 }
+
 .hero-title {
     font-size: 3.25rem;
     font-weight: bold;
     color: #3A3A3A;
     max-width: 582px;
-    
+
 }
-.hero-description{
+
+.hero-description {
     color: #3A3A3A;
     font-weight: 600;
     max-width: 505px;
     margin-top: 16px;
     margin-bottom: 16px;
 }
-.hero-image{
+
+.hero-image {
     max-width: 480px;
     max-height: 480px;
     background-image: url("../images/Circle\ design.svg");
@@ -85,9 +89,9 @@
 }
 
 /* brand logos */
-.brand-logos{
+.brand-logos {
     /* display: grid; */
-    
+
     max-width: 1280px;
     margin: 0 auto;
     margin-top: 30px;
@@ -99,70 +103,82 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     justify-items: center;
-    align-items: center; 
+    align-items: center;
 }
+
 .brand-logos img {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 /* popular collections */
-.popular-collection{
+.popular-collection {
     max-width: 1050px;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 70px;
 }
-.popular-collection > h2{
+
+.popular-collection > h2 {
     color: #3A3A3A;
     font-weight: 600;
     font-size: 1.75rem;
     margin-bottom: 30px;
 }
-.popular-collection-container{
+
+.popular-collection-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+   
     gap: 30px;
 }
-.popular-collection-card{
+
+.popular-collection-card {
     max-width: 329px;
-    max-height: 476px;
+    /* max-height: 476px; */
     box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
     padding: 17px 15px;
     border-radius: 5px;
     text-align: left;
 }
-.card-image{
-    max-width: 100%;
+
+.card-image {
+    width: 100%;
 }
-.card-name{
+
+.card-name {
     color: rgba(24, 25, 31, 1);
     font-size: 1.75rem;
     font-weight: 500;
 }
-.card-price{
+
+.card-price {
     color: rgba(0, 0, 0, 0.87);
     font-size: 1.5rem;
     font-weight: 400;
 }
-.card-description{
+
+.card-description {
     color: rgba(94, 99, 102, 1);
     font-size: o.875rem;
     font-weight: 700;
     max-width: 196px;
 }
-.card-rating{
+
+.card-rating {
     display: flex;
     gap: 8px;
     align-items: center;
 }
-.rating{
+
+.rating {
     color: rgba(94, 99, 102, 1);
     font-size: o.875rem;
     font-weight: 700;
 }
-.see-more{
+
+.see-more {
     color: #E02C6D;
     font-weight: 700;
     margin-top: 50px;
@@ -171,7 +187,7 @@
 
 
 /* featured products */
-.featured-products{
+.featured-products {
     max-width: 1180px;
     margin: 0 auto;
     display: flex;
@@ -179,46 +195,52 @@
     gap: 96px;
     margin-bottom: 100px;
 }
-.featured-title{
+
+.featured-title {
     font-size: 2.375rem;
     font-weight: bold;
     color: #0A0826;
 }
-.featured-description{
+
+.featured-description {
     font-weight: 700;
     color: rgba(108, 108, 108, 1);
     margin-top: 16px;
     margin-bottom: 16px;
 }
-.featured-content{
+
+.featured-content {
     max-width: 610px;
 }
 
 /* footer */
-footer{
+footer {
     background-color: #0A0826;
     padding-top: 45px;
     padding-bottom: 55px;
     text-align: center;
 }
-.footer-title{
+
+.footer-title {
     font-size: 1.5rem;
     color: white;
     font-weight: 700;
 }
-.footer-content p{
+
+.footer-content p {
     color: rgba(217, 219, 225, 1);
     font-size: 0.875rem;
     font-weight: 500;
 }
 
-.footer-logo{
+.footer-logo {
     margin-top: 17px;
     display: flex;
     justify-content: center;
     gap: 16px;
 }
-.icon-circle{
+
+.icon-circle {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -227,7 +249,8 @@ footer{
     justify-content: center;
     align-items: center;
 }
-.icon-circle i{
+
+.icon-circle i {
     color: white;
     font-size: 1.5rem;
     padding: 10px;
@@ -242,32 +265,38 @@ footer{
 
 /* mobile responsive start */
 @media screen and (max-width:576px) {
-    header, main{
+
+    header,
+    main {
         margin-left: 15px;
         margin-right: 16px;
     }
+
     .navbar,
     .nav-links,
-    .popular-collection-container
-    {
+    .popular-collection-container {
         flex-direction: column;
         text-align: center;
     }
-    .nav-links{
+
+    .nav-links {
         flex-direction: row;
         gap: 15px;
         justify-content: space-between;
 
     }
-    .nav-links{
+
+    .nav-links {
         gap: 5px;
     }
-    .hero{
+
+    .hero {
         flex-direction: column-reverse;
         text-align: center;
     }
-    .brand-logos{
-        grid-template-columns: repeat(4, 1fr) ;
+
+    .brand-logos {
+        grid-template-columns: repeat(4, 1fr);
         gap: 20px;
         justify-items: center;
         border-top: 0px;
@@ -276,24 +305,31 @@ footer{
         margin-bottom: 30px;
         padding: 0px;
     }
-    .popular-collection{
+
+    .popular-collection {
         margin-bottom: 30px;
-        
+
     }
-    .popular-collection-container{
+
+    .popular-collection-container {
+
         display: grid;
         justify-items: center;
+
     }
-    .see-more{
-        margin:10px auto;
+
+    .see-more {
+        margin: 10px auto;
     }
-    .featured-products{
+
+    .featured-products {
         flex-direction: column-reverse;
         text-align: center;
         gap: 30px;
         margin-bottom: 30px;
     }
-    .featured-title{
+
+    .featured-title {
         font-size: 1.5rem;
     }
 }
@@ -302,24 +338,27 @@ footer{
 
 /* responsive for medium devices */
 @media screen and (min-width:576px) and (max-width:992px) {
-    header, main{
+
+    header,
+    main {
         margin: 15px;
     }
+
     .navbar,
-    .nav-links
-    {
+    .nav-links {
         flex-direction: column;
         text-align: center;
     }
-    .nav-links
-    {
+
+    .nav-links {
         flex-direction: row;
         justify-content: space-between;
         margin-top: 15px;
     }
-    .brand-logos{
+
+    .brand-logos {
         /* display: grid; */
-        grid-template-columns: repeat(4, 1fr) ;
+        grid-template-columns: repeat(4, 1fr);
         gap: 20px;
         border-top: 0px;
         border-bottom: 0px;
@@ -327,19 +366,26 @@ footer{
         margin-bottom: 50px;
         padding: 0px;
     }
-    .popular-collection{
+
+    .popular-collection {
         margin-bottom: 30px;
     }
-    .popular-collection-container{
+
+    .popular-collection-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 5px;
+        gap: 30px;
         justify-items: center;
     }
-    .see-more{
-        margin: 10px auto;
+    .popular-collection-card:nth-child(9){
+        grid-column: span 2;
     }
-    .featured-products{
+    .see-more {
+        margin: 10px auto;
+        text-align: center;
+    }
+
+    .featured-products {
         flex-direction: column-reverse;
         text-align: center;
         gap: 30px;
