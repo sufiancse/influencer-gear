@@ -163,7 +163,7 @@
     color: rgba(94, 99, 102, 1);
     font-size: o.875rem;
     font-weight: 700;
-    max-width: 196px;
+    width: 196px;
 }
 
 .card-rating {
